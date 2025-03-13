@@ -12,9 +12,22 @@ A fully working runtime dark mode mod for Unity Editor on Windows with:
 
 > This runtime mod works on Windows 11 and Windows 10 1903+. Tested on Unity 2019, 2020, 2021, 2022, 2023 and Unity 6.
 
-![Screenshot](screenshot.jpg?raw=true)
+![Screenshot](Source~/screenshot.jpg?raw=true)
 
 ## Easy installation guide
+
+Add the dependency to your `manifest.json`
+
+```json
+{
+  "dependencies": {
+    "jd.boiv.in.dark-mode": "https://github.com/starburst997/Unity.DarkMode.git"
+  }
+}
+```
+
+or
+
 - Download the `UnityEditorDarkMode.unitypackage` from Unity [AssetStore](https://assetstore.unity.com/packages/slug/281842) or GitHub [releases](https://github.com/0x7c13/UnityEditor-DarkMode/releases) and double click to install it to your Unity project.
 
   > **WARNING:** If you feel uncomfortable downloading a malicious Unity Package from a stranger like me, then you should not:) Take a look at later sections to see how it works and how to build it yourself if you prefer. Please do your own homework and make your own judgement. I offer this approach as a convenience only.
@@ -27,7 +40,7 @@ A fully working runtime dark mode mod for Unity Editor on Windows with:
   > **WARNING:** If you feel uncomfortable downloading a malicious DLL from a stranger like me, then you should not:) Take a look at later sections to see how it works and how to build it yourself if you prefer. Please do your own homework and make your own judgement. I offer this approach as a convenience for those who don't want to build a C++ project themselves.
 - Copy the DLL into your Unity project and apply below settings to the DLL in the Unity Editor inspector:
 
-    ![dll-setting](screenshot-dll-setting.png?raw=true)
+    ![dll-setting](Source~/screenshot-dll-setting.png?raw=true)
     
   - Make sure `Load on startup` is checked which will make the DLL to be loaded on Unity Editor startup.
   - Make sure `OS` is set to `Windows` which will make the DLL to be loaded only on Windows OS.
