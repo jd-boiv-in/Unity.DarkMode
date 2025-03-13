@@ -1,0 +1,16 @@
+{
+  "name": "jd.boiv.in.dark-mode",
+  "version": "1.0.0",
+  "displayName": "Dark Mode",
+  "description": "A fully working runtime dark mode mod for Unity Editor on Windows",
+  "dependencies": {
+    
+ },
+ "keywords": [
+    "editor", "dark", "themes"
+  ],
+  "author": {
+    "name": "Jiaqi Liu",
+    "email": "jackil@microsoft.com"
+  }
+}
